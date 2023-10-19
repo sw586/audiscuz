@@ -123,8 +123,8 @@ def get_points(s: req_Session, number_c: int):
 
 
 if __name__ == "__main__":
-    username = os.environ.get("sw586", "sw586")
-    password = os.environ.get("sW201988", "sW201988")
+    username = os.environ["HOSTLOC_USERNAME"]
+    password = os.environ["HOSTLOC_PASSWORD"]
 
     user_list = username.split(",")
     passwd_list = password.split(",")
