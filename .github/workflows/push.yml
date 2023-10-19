@@ -18,11 +18,9 @@ jobs:
         run: |
           git config --global user.name "sw586"  # 配置全局的用户名
           git config --global user.email "sw586@126.com"  # 配置全局的电子邮件地址
-          git commit --allow-empty -m "Automatic push"
-          git push https://${{ secrets.MY_PERSONAL_TOKEN }}@github.com/sw586/audiscuz.git
 
 
       - name: 'Push changes'  # 步骤名称：推送更改
         run: |
           git commit --allow-empty -m "Automatic push"  # 提交一个空的更改，带有提交消息 "Automatic push"
-          git push  # 推送更改
+          git push https://${{ secrets.MY_PERSONAL_TOKEN }}@github.com/sw586/audiscuz.git  # 推送更改
