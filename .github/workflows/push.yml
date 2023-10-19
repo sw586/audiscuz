@@ -16,8 +16,8 @@ jobs:
 
       - name: 'Configure Git'  # 步骤名称：配置 Git
         run: |
-          git config --global user.name "GloryXMan"  # 配置全局的用户名
-          git config --global user.email "dmking923@hotmail.com"  # 配置全局的电子邮件地址
+          git config --global user.name "sw586"  # 配置全局的用户名
+          git config --global user.email "sw586@126.com"  # 配置全局的电子邮件地址
 
       - name: 'Push changes'  # 步骤名称：推送更改
         run: |
