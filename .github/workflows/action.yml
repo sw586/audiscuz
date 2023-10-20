@@ -5,7 +5,7 @@ on:
     branches: 
       - master
   schedule:
-    - cron: '*/30 * * * *'  # 每天的6点到23点，每30分钟执行一次
+    - cron: '0 18 * * *'  # 每天凌晨2点（UTC+8转换为UTC时间是18:00）
 
 jobs:
   get_points:
